@@ -43,13 +43,21 @@
             </a>
           </div>
 
-          <form action="/payment" method="POST">
-            <!-- Form inputs go here -->
-            <button type="submit">Proceed to Payment</button>
-            <!-- Submit button inside form -->
+          <!-- Form inputs go here -->
+          <button type="submit">Proceed to Payment</button>
+          <!-- Submit button inside form -->
+          <form id="orderForm">
+            <!-- form fields here -->
           </form>
-          <button class="btn">Cancel Order</button>
-          <!-- Prevents accidental form submission -->
+
+          <button
+            type="button"
+            class="btn"
+            aria-controls="orderForm"
+            aria-label="Cancel order and clear form"
+          >
+            Cancel Order
+          </button>
         </div>
       </section>
     </main>
