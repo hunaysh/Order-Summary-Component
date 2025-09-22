@@ -36,10 +36,18 @@
               <h2>Annual Plan</h2>
               <p>$59.99/year</p>
             </div>
-            <a href="#" aria-label="Change your password">Change</a>
-            <!-- Adds context for screen readers -->
+
+            <a href="#">
+              Change<span class="sr-only"> your password</span>
+              <!-- 'sr-only' hides text visually but keeps it accessible -->
+            </a>
           </div>
-          <button type="submit">Proceed to Payment</button>
+
+          <form action="/payment" method="POST">
+            <!-- Form inputs go here -->
+            <button type="submit">Proceed to Payment</button>
+            <!-- Submit button inside form -->
+          </form>
           <button class="btn">Cancel Order</button>
           <!-- Prevents accidental form submission -->
         </div>
