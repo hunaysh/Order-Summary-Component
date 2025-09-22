@@ -37,18 +37,16 @@
               <p>$59.99/year</p>
             </div>
 
-            <a href="#">
-              Change<span class="sr-only"> your password</span>
-              <!-- 'sr-only' hides text visually but keeps it accessible -->
+            <a href="#" aria-label="Change your password">
+              Change
+              <!-- aria-label provides accessible name for screen readers -->
             </a>
           </div>
 
-          <!-- Form inputs go here -->
-          <button type="submit">Proceed to Payment</button>
-          <!-- Submit button inside form -->
           <form id="orderForm">
             <!-- form fields here -->
           </form>
+          <button type="submit" form="orderForm">Proceed to Payment</button>
 
           <button
             type="button"
